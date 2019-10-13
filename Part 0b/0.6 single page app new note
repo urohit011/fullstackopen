@@ -1,0 +1,13 @@
+title Single Page App new note
+
+note over browser:
+when the save button is clicked the browser
+1. executes event handler for it which append a
+new object in the notes array.
+2. empties the inout box for adding new notes.
+3. re-renders the notes array and sends the notes
+variable to server to store new notes in database
+end note
+
+browser-> server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: {"message":"note created"}
